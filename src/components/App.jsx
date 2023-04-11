@@ -1,22 +1,40 @@
-import './App.css';
-import NavBar from './NavBar/NavBar.jsx';
-import ItemListContainer from './ItemListContainer/ItemListContainer';
+import './App.css'
+//Componentes
 
-function App() {
+import { ItemCount } from './ItemCount/ItemCount.jsx'
+import { Navbar } from './Navbar/Navbar'
+import { ItemListContainer } from './ItemListContainer/ItemListContainer.jsx'
+export const App = () => {
+  //Aqui irian los hooks
   return (
-    <div className="cuerpo1">
-    <h1 className='txtcuerpo'>DutyShop</h1>
-    <div className='enlaces'>
-    
-      <button>Alfombras</button> 
-             <button>Insumoss</button> 
-             <button>Maquinariaa</button> 
-             <input type="text" placeholder='Buscar' />      
+    <div>
+      <Navbar />
+      <ItemCount ValInicial={5} stock={15} />
+      <ItemListContainer />
     </div>
-<NavBar />
-<ItemListContainer greeting={"Ingresar"} /> 
-</div>
-  );
+  )
 }
 
-export default App;
+
+
+
+
+/*
+export const App = () => {
+  /*
+    HTML      JSX
+    class -> className
+    <input> -> <input />
+    `${valor}` -> {valor}
+    style = "nombreProp: valor" -> style= {{"nombreProp": "valor"}}
+    mayor parte de las propiedades -> camelCase
+  
+  const valor = 5
+  return (
+    <div className='divGeneral' style={{ backgroundColor: "red" }}>
+      <h1>Hola!</h1>
+      <p>{valor}</p>
+      <input type="text" />
+    </div>
+  )
+}*/

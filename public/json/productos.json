@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "idCategoria": 1,
+        "nombre": "Televisor",
+        "marca": "KenBron",
+        "modelo": "T60",
+        "precio": 1500,
+        "stock": 2,
+        "img": "img/ferrari.jpg"
+    },
+    {
+        "id": 2,
+        "idCategoria": 2,
+        "nombre": "Celular",
+        "marca": "Xiaomi",
+        "modelo": "1100",
+        "precio": 1000,
+        "stock": 3,
+        "img": ""  
+    },
+    {
+        "id": 3,
+        "idCategoria": 3,
+        "nombre": "Auto",
+        "marca": "Dodge",
+        "modelo": "Charger",
+        "precio": 5000,
+        "stock": 5,
+        "img": ""  
+    },
+    {
+        "id": 4,
+        "idCategoria": 3,
+        "nombre": "Auto",
+        "marca": "Dodge",
+        "modelo": "Viper",
+        "precio": 5001,
+        "stock": 3,
+        "img": ""  
+    },
+    {
+        "id": 5,
+        "idCategoria": 4,
+        "nombre": "Alfombra",
+        "marca": "Cononda",
+        "modelo": "T900",
+        "precio": 50,
+        "stock": 7,
+        "img": ""  
+    }
+
+]
