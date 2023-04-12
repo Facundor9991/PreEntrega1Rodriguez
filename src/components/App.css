@@ -1,3 +1,17 @@
+
 .divInicial {
   background-color: aqua;
+}
+.itemDetail{
+  max-width: 750px;
+  margin-top: 10px;
+}
+.card{
+  margin: 10px;
+  align-self: center;
+}
+body{
+  margin: 0;
+  padding: 0;
+  color: rgb(red, rgb(46, 47, 46), blue)
 }

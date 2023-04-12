@@ -1,15 +1,17 @@
-import { useState } from "react"
-export const ItemCount = ({ ValInicial, stock }) => {
 
-  const [contador, setContador] = useState(ValInicial) //Defino un estado con valor inicial 1
+import { useCount } from "../../hooks/useCount"
 
-  const sumar = () => contador < stock && setContador(contador + 1)
-  const restar = () => contador > ValInicial && setContador(contador - 1)
+export const ItemCount = ({ ValInicial, min, max }) => {
+
+ const {count,minus,sum, reset} = useCount(1,1,10)
+
+
   return (
     <div>
-      <button className="btn btn-dark" onClick={() => restar()}>-</button>
-      {contador}
-      <button className="btn btn-dark" onClick={() => sumar()}>+</button>
+      <button className="btn btn-dark" onClick={() => minus()}>-</button>
+      {count}
+      <button className="btn btn-dark" onClick={() => sum()}>+</button>
+      <button className="btn btn-dark" onClick={() => reset()}>reset</button>
       <button className="btn btn-light">Agregar al Carrito</button>
     </div>
   )

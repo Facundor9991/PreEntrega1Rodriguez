@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { ItemList } from "../ItemList/ItemList"
 //Consulto a mis productos de mi Base de datos y se los envio a ItemList
-/* const BDD = [
+const BDD = [
   {
     "id": 1,
     "idCategoria": 1,
@@ -9,8 +9,8 @@ import { ItemList } from "../ItemList/ItemList"
     "marca": "Lenovo",
     "modelo": "Y510P",
     "precio": 60000,
-    "stock": 30,
-    "img": "img/ferrari.jpg"
+    "stock": 5,
+    "img": ".img/ferrari.jpg"
   },
   {
     "id": 2,
@@ -18,7 +18,7 @@ import { ItemList } from "../ItemList/ItemList"
     "nombre": "Celular",
     "marca": "Xiomi",
     "modelo": "Mi-9",
-    "precio": 35000,
+    "precio": 3500,
     "stock": 20,
     "img": "img/xiaomi-mi-9.jpg"
   },
@@ -43,11 +43,34 @@ import { ItemList } from "../ItemList/ItemList"
     "img": "img/camara-iqual.jpg"
   },
 ]
-*/
+
 
 export const ItemListContainer = () => {
 
   const [productos, setProductos] = useState([])
+
+
+
+    /*
+  useEffect(() => {
+    const promesa = (condicional) => new Promise((resolve, reject) => {
+      if (condicional) {
+        resolve(BDD)
+      }
+      reject("No posee los permisos necesarios")
+    })
+    promesa(true)
+      .then(productos => {
+        const productosFiltrados = productos.filter(prod => prod.stock > 0)
+        setProductos(productosFiltrados)  
+        //const items = <ItemList productos={productosFiltrados} />
+        //setProductos(items)
+      })
+      .catch(error => console.error(error))
+  }, [])*/
+
+
+
 
   useEffect(() => {
     fetch('./json/productos.json')
@@ -58,6 +81,8 @@ export const ItemListContainer = () => {
 
       })
 
+
+
   }, [])
 
   return (
@@ -66,3 +91,4 @@ export const ItemListContainer = () => {
     </div>
   )
 }
+

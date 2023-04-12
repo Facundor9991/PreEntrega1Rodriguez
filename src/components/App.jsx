@@ -4,6 +4,7 @@ import './App.css'
 import { ItemCount } from './ItemCount/ItemCount.jsx'
 import { Navbar } from './Navbar/Navbar'
 import { ItemListContainer } from './ItemListContainer/ItemListContainer.jsx'
+import { ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer'
 export const App = () => {
   //Aqui irian los hooks
   return (
@@ -11,6 +12,8 @@ export const App = () => {
       <Navbar />
       <ItemCount ValInicial={5} stock={15} />
       <ItemListContainer />
+      <ItemDetailContainer />
+
     </div>
   )
 }
