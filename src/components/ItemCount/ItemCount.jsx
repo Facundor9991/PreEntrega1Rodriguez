@@ -3,7 +3,7 @@ import { useCount } from "../../hooks/useCount"
 
 export const ItemCount = ({ ValInicial, min, max }) => {
 
- const {count,minus,sum, reset} = useCount(1,1,10)
+ const {count,minus,sum, reset} = useCount(ValInicial,min,max)
 
 
   return (

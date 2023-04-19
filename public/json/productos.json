@@ -1,53 +1,83 @@
 [
     {
         "id": 1,
-        "idCategoria": 1,
-        "nombre": "Televisor",
-        "marca": "KenBron",
-        "modelo": "T60",
-        "precio": 1500,
-        "stock": 2,
-        "img": "img/ferrari.jpg"
+        "idCategoria": 2,
+        "nombre": "Ferrari",
+        "marca": "Ferrari",
+        "modelo": "458 Spyder",
+        "precio": 36000,
+        "stock": 3,
+        "img": "/img/ferrari.jpg"
     },
     {
         "id": 2,
         "idCategoria": 2,
-        "nombre": "Celular",
-        "marca": "Xiaomi",
-        "modelo": "1100",
-        "precio": 1000,
-        "stock": 3,
-        "img": ""  
+        "nombre": "Dodge",
+        "marca": "Dodge",
+        "modelo": "SRT Hellcat",
+        "precio": 98000,
+        "stock": 1,
+        "img": "/img/DODGESRT.jpg"  
     },
     {
         "id": 3,
-        "idCategoria": 3,
-        "nombre": "Auto",
-        "marca": "Dodge",
-        "modelo": "Charger",
-        "precio": 5000,
-        "stock": 5,
-        "img": ""  
+        "idCategoria": 2,
+        "nombre": "Pick-up",
+        "marca": "Ford",
+        "modelo": "Raptor",
+        "precio": 135020,
+        "stock": 2,
+        "img": "/img/raptor.jpg"  
     },
     {
         "id": 4,
-        "idCategoria": 3,
-        "nombre": "Auto",
+        "idCategoria": 2,
+        "nombre": "Pick-up",
         "marca": "Dodge",
-        "modelo": "Viper",
-        "precio": 5001,
-        "stock": 3,
-        "img": ""  
+        "modelo": "Ram Laramie 1500",
+        "precio": 89000,
+        "stock": 5,
+        "img": "/img/RAM.jpg"  
     },
     {
         "id": 5,
+        "idCategoria": 2,
+        "nombre": "Motos",
+        "marca": "Kawasaki",
+        "modelo": "KLX",
+        "precio": 25000,
+        "stock": 1,
+        "img": "/img/klx.jpg"  
+    },
+    {
+        "id": 6,
+        "idCategoria": 2,
+        "nombre": "Motos",
+        "marca": "Yamaha",
+        "modelo": "Raptor 700",
+        "precio": 32000,
+        "stock": 6,
+        "img": "/img/RAPTOR_4.jpg"  
+    },
+    {
+        "id": 7,
         "idCategoria": 4,
-        "nombre": "Alfombraa",
-        "marca": "Cononda",
-        "modelo": "T900",
-        "precio": 50,
-        "stock": 7,
-        "img": ""  
+        "nombre": "Bote",
+        "marca": "Suggy",
+        "modelo": "ST 225",
+        "precio": 61000,
+        "stock": 1,
+        "img": "/img/lancha1.jpg"  
+    },
+    {
+        "id": 8,
+        "idCategoria": 4,
+        "nombre": "Bote",
+        "marca": "Victory",
+        "modelo": "AST-1700",
+        "precio": 54000,
+        "stock": 1,
+        "img": "/img/lancha2.jpg"  
     }
 
 ]

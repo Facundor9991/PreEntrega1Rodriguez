@@ -1,6 +1,6 @@
 import { ItemCount } from "../ItemCount/ItemCount"
 
-export const ItemDetail = (item) => {
+export const ItemDetail = ({item}) => {
   return (
     <div className="row g-0">
         <div className="col-md-4">
@@ -14,7 +14,7 @@ export const ItemDetail = (item) => {
         <p className="card-text">precio {item.precio}</p>
         <p className="card-text">stock {item.stock}</p>
         <ItemCount ValInicial={1} min={1} max={item.stock} />
-        <button className="btn btn-secondary">agregar al carrito</button>
+        
     </div>
 </div>
     </div>
