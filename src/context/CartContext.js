@@ -25,7 +25,7 @@ const addItem = (item, quantity) => {
     if(isInCart(item.id)) {
 const indice = carrito.findIndex(prod => prod.id === item.id)
 const aux = [...carrito]
-aux[indice].quantity = quantity
+aux[indice].quantity = quantity // ou aux[indice].quantity + quantity para sumar mas cantidades
 setCarrito(aux)
 
     } else{
