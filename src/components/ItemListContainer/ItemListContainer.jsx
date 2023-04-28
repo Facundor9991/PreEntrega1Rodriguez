@@ -1,37 +1,14 @@
 import { useState, useEffect } from "react"
 import { ItemList } from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
+import { Item } from "../Item/Item"
 //-------------enviar productos de la base de datos a itemlist
-
-
 
 
 export const ItemListContainer = () => {
 
   const [productos, setProductos] = useState([])
   const {category} = useParams()
-
-
-
-    /*
-  useEffect(() => {
-    const promesa = (condicional) => new Promise((resolve, reject) => {
-      if (condicional) {
-        resolve(BDD)
-      }
-      reject("No posee los permisos necesarios")
-    })
-    promesa(true)
-      .then(productos => {
-        const productosFiltrados = productos.filter(prod => prod.stock > 0)
-        setProductos(productosFiltrados)  
-        //const items = <ItemList productos={productosFiltrados} />
-        //setProductos(items)
-      })
-      .catch(error => console.error(error))
-  }, [])*/
-
-
 
 
   useEffect(() => {
@@ -60,7 +37,7 @@ export const ItemListContainer = () => {
 
   return (
     <div className="row">
-      {<ItemList productos={productos} />}
+      {<ItemList productos={productos} plantilla={"Item"} />}
     </div>
   )
 }

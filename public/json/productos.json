@@ -16,7 +16,7 @@
         "marca": "Dodge",
         "modelo": "SRT Hellcat",
         "precio": 98000,
-        "stock": 1,
+        "stock": 4,
         "img": "/img/DODGESRT.jpg"  
     },
     {
@@ -41,7 +41,7 @@
     },
     {
         "id": 5,
-        "idCategoria": 2,
+        "idCategoria": 3,
         "nombre": "Motos",
         "marca": "Kawasaki",
         "modelo": "KLX",
@@ -51,7 +51,7 @@
     },
     {
         "id": 6,
-        "idCategoria": 2,
+        "idCategoria": 3,
         "nombre": "Motos",
         "marca": "Yamaha",
         "modelo": "Raptor 700",
@@ -78,6 +78,46 @@
         "precio": 54000,
         "stock": 1,
         "img": "/img/lancha2.jpg"  
+    },
+    {
+        "id": 9,
+        "idCategoria": 1,
+        "nombre": "Helicoptero",
+        "marca": "Avant",
+        "modelo": "ST-17",
+        "precio": 54000,
+        "stock": 2,
+        "img": "/img/Heli1.jpg"  
+    },
+    {
+        "id": 10,
+        "idCategoria": 1,
+        "nombre": "Avioneta",
+        "marca": "Straton",
+        "modelo": "MMH-90",
+        "precio": 3000,
+        "stock": 3,
+        "img": "/img/Neta1.jpg"  
+    },
+    {
+        "id": 11,
+        "idCategoria": 1,
+        "nombre": "Helicoptero",
+        "marca": "Majesti",
+        "modelo": "RRT34",
+        "precio": 54000,
+        "stock": 5,
+        "img": "/img/Heli3.webp"  
+    },
+    {
+        "id": 12,
+        "idCategoria": 1,
+        "nombre": "Avioneta",
+        "marca": "Infernus",
+        "modelo": "II-P9",
+        "precio": 5000,
+        "stock": 2,
+        "img": "/img/Neta2.jpg"  
     }
 
 ]

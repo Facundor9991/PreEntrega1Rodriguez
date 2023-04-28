@@ -1,6 +1,17 @@
 import { ItemCount } from "../ItemCount/ItemCount"
-
+import { useCarritoContext } from "../../context/CartContext"
 export const ItemDetail = ({item}) => {
+
+
+  const{addItem} = useCarritoContext()
+  
+  const onAdd = (contador) => {
+    addItem(item, contador)
+
+  
+  }
+
+
   return (
     <div className="row g-0">
         <div className="col-md-4">
@@ -13,7 +24,7 @@ export const ItemDetail = ({item}) => {
         <p className="card-text">marca {item.marca}</p>
         <p className="card-text">precio {item.precio}</p>
         <p className="card-text">stock {item.stock}</p>
-        <ItemCount ValInicial={1} min={1} max={item.stock} />
+        <ItemCount ValInicial={1} min={1} max={item.stock} onAdd={onAdd}/>
         
     </div>
 </div>

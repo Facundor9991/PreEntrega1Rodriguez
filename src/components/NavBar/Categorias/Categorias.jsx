@@ -1,7 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 
-export const Categorias = () => {
+import { Link } from 'react-router-dom';
+import { memo } from 'react';
+
+export const Categorias = memo(() => {
     return (
         <ul className="navbar-nav me-auto mb-2 mb-lg-0" >
             <li className="nav-item">
@@ -15,21 +16,22 @@ export const Categorias = () => {
             <li className="nav-item">
                 <Link className='nav-link' to={"/category/1"}>
                 <button className='btn btn-secondary'>
-                    <i className="fas fa-home fa-lg"> Propiedades</i>
+                    
+                    <i className="fas fa-plane fa-lg">Aeronaves</i>
                 </button>
                 </Link>
             </li>
             <li className="nav-item">
             <Link className='nav-link' to={"/category/2"}>
                 <button className='btn btn-secondary'>
-                    <i className="fas fa-car fa-lg"> Automotores</i>
+                    <i className="fas fa-car fa-lg"> Automoviles</i>
                 </button>
                 </Link>
             </li>
             <li className="nav-item">
             <Link className='nav-link' to={"/category/3"}>
                 <button className='btn btn-secondary'>
-                <i className="fas fa-star fa-lg"> DecoHogar</i>
+                <i className="fas fa-motorcycle fa-lg"> Motos</i>
                 </button>
                 </Link>
             </li>
@@ -43,4 +45,4 @@ export const Categorias = () => {
            
         </ul>
     );
-}
+})

@@ -6,7 +6,7 @@ export const ItemDetailContainer = () => {
     const [item, setItem] = useState ([])
     const {id} = useParams()
 
-    useEffect ( () => {
+    useEffect (() => {
         fetch('../json/productos.json')
         .then(response => response.json())
         .then (productos =>{
