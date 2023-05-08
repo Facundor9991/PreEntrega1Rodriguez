@@ -4,7 +4,7 @@ import {getFirestore, addDoc, getDoc, getDocs, deleteDoc, updateDoc, collection,
 
 
 const firebaseConfig = {
-  apiKey: "",
+  apiKey: process.env.API_KEY,
   authDomain: "missbanana-e42f0.firebaseapp.com",
   projectId: "missbanana-e42f0",
   storageBucket: "missbanana-e42f0.appspot.com",
