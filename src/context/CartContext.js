@@ -50,7 +50,7 @@ const emptyCart = () => {
 const getItemQuantity = () => {
   return carrito.reduce((acum, prod) => acum += prod.quantity, 0)
 }
-console.log(carrito)
+
 
 
 const totalPrice = () => {

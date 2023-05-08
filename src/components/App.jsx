@@ -1,8 +1,12 @@
 import './App.css'
-
+import 'react-toastify/dist/ReactToastify.css';
 //router
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-// context
+// react tostify
+
+import { ToastContainer } from 'react-toastify';
+
+
 
 
 
@@ -15,10 +19,15 @@ import { ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer'
 import { CheckOut } from './Checkout/CheckOut'
 import { Cart } from './Cart/Cart';
 import { Inicio } from './Inicio/Inicio'
+
+import { createProducts,} from '../firebase/firebase'
 export const App = () => {
   //Aqui irian los hooks
   //<ItemCount ValInicial={5} stock={15} />
   //-------------ELEMENTOS SACADOS DE ROUTES <Route path='/' element={<ItemListContainer/>} />
+
+  //createProducts()
+
   return (
     
       <>
@@ -27,6 +36,7 @@ export const App = () => {
 
       
       <Navbar />
+      <ToastContainer/>
         <Inicio />
       <Routes>
       <Route path='/' element={<ItemListContainer/>} />

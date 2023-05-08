@@ -8,7 +8,7 @@ export const Categorias = memo(() => {
             <li className="nav-item">
                 <Link className='nav-link' to={"/"}>
                 <button className='btn btn-secondary'>
-                    <i className="fas fa-list fa-lg"> Menu</i>
+                    <i className="fas fa-list fa-lg"> Inicio</i>
                 </button>
                 </Link>
             </li>
