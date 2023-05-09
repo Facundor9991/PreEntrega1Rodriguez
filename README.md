@@ -1,4 +1,4 @@
-# name missBanana Ecommerce React
+# Nombre del Proyecto; missBanana Ecommerce React
 
 _Aplicacion de Ecommerce en REACT numero de comision 39655
 
