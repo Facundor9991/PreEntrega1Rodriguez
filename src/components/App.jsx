@@ -13,7 +13,7 @@ import { ToastContainer } from 'react-toastify';
 //Componentes
 
 //import { ItemCount } from './ItemCount/ItemCount.jsx'
-import { Navbar } from './Navbar/Navbar'
+import { Navbar } from './Navbar/cocapapi'
 import { ItemListContainer } from './ItemListContainer/ItemListContainer.jsx'
 import { ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer'
 import { CheckOut } from './Checkout/CheckOut'
